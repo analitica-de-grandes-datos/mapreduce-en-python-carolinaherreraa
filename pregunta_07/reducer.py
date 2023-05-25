@@ -14,9 +14,10 @@ if __name__ == "__main__":
 
     sorted_group = sorted(group, key=lambda x: (x[0], x[2]))
 
-    for item in sorted_group:
-        letter, date, num = item
-        sys.stdout.write(f"{letter}\t{date}\t{num}\n")
+    for elemento in sorted_group:
+        sys.stdout.write(f"{elemento[0]}   {elemento[1]}   {elemento[2]}\n")
 
 
 
+
+        
