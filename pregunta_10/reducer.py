@@ -21,8 +21,11 @@ if __name__ == "__main__":
     dictionary_sort = sorted(dictionary.items(), key=lambda x: x[0])
     
     for letter, values in dictionary_sort:
-        values_str = ",".join(values)  
+        values_sorted = sorted(values, key=lambda x: int(x))
+        values_str = ",".join(values_sorted)
         sys.stdout.write(f"{letter}\t{values_str}\n")
+
+
 
 
 
